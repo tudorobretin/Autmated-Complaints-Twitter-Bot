@@ -1,5 +1,3 @@
-import selenium
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 import os
@@ -44,7 +42,7 @@ class Twitter:
             login_button = self.driver.find_element(By.XPATH, '/html/body/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div')
             login_button.click()
 
-    def send_tweet_complaint(self, down_speed):
+    def send_tweet_complaint(self, down_speed, contract_speed):
 
         time.sleep(1)
         accept_cookies = self.driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div[1]/div/div/div/div/div/div[2]/div[1]/div')
@@ -53,8 +51,8 @@ class Twitter:
         tweet_input_field = self.driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/div/label/div[1]/div/div/div/div/div[2]/div/div/div')
         tweet_input_field.send_keys(f"This is an automated tweet.\n"
                         f"@DigiRomania, current internet speed: {down_speed}Mbs\n"
-                        f"What I'm paying for: 1000Mbs")
+                        f"What I'm paying for: {contract_speed}Mbs")
         time.sleep(1)
 
         tweet_button = self.driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[3]/div/div/div[2]/div[3]')
-        #tweet_button.click()
+        tweet_button.click()
