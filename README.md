@@ -15,6 +15,3 @@ Features:
 - Writes and tweets dynamic message
 
 ![](https://github.com/tudorobretin/Snake-Game/blob/master/Snake.gif)
-
-
-        
