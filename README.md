@@ -3,6 +3,18 @@
 A bot that sends a public complaint on twitter @ your internet provider if 
 your internet speed is lower than stated in contract.
 
-## Steps
+## Features and used concepts:
 
--SECTION TO BE FILLED
+    -Webscraping done using Selenium
+    -Project structured using OOP
+
+Features:
+- Opens web browser and test internet speed
+- Changes window and opens twitter
+- Twitter login
+- Writes and tweets dynamic message
+
+![](https://github.com/tudorobretin/Snake-Game/blob/master/Snake.gif)
+
+
+        
