@@ -14,4 +14,4 @@ Features:
 - Twitter login
 - Writes and tweets dynamic message
 
-![](https://github.com/tudorobretin/Snake-Game/blob/master/Snake.gif)
+![](https://github.com/tudorobretin/Automated-Complaints-Twitter-Bot/blob/master/twitter_showcase.png)
